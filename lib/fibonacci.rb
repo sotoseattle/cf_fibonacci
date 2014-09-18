@@ -1,12 +1,12 @@
 module Fibonacci
-  def nth(n)
-    n = n.to_int
-    if n == 0 || n == 1
-      n
-    elsif n > 0
-      nth(n - 1) + nth(n - 2)
+  def nth(x)
+    x = x.to_int
+    if x == 0 || x == 1
+      x
+    elsif x > 0
+      nth(x - 1) + nth(x - 2)
     else
-      (-1)**(n + 1) * nth(-n)
+      (-1)**(x + 1) * nth(-x)
     end
   end
 end

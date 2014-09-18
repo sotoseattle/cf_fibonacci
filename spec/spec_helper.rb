@@ -1,8 +1,5 @@
 require 'minitest/autorun'
 require 'minitest/spec'
-require 'fibonacci'
-
-include Fibonacci
 
 def solution
   solution = {}
