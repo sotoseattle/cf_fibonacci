@@ -1,11 +1,12 @@
 module Fibonacci
-  def at_position(n)
+  def nth(n)
+    n = n.to_int
     if n == 0 || n == 1
       n
     elsif n > 0
-      at_position(n - 1) + at_position(n - 2)
+      nth(n - 1) + nth(n - 2)
     else
-      (-1)**(n + 1) * at_position(-n)
+      (-1)**(n + 1) * nth(-n)
     end
   end
 end

@@ -10,11 +10,11 @@ The only method included gives back the fibonacci number at an specified positio
 
 include Fibonacci
 
-puts Fibonacci.at_position(20)
+puts Fibonacci.nth(20)
 
 => 6765
 
-puts Fibonacci.at_position(-8)
+puts Fibonacci.nth(-8)
 
 => -21
 ```
@@ -26,3 +26,6 @@ Very simple recursive method based on the two rules for Fibonacci numbers. It di
 - Other positive numbers => recursively computes f(n) = f(n-2) + f(n-1)
 - Negative number => recursively computes f(n) = (-1)^(n+1) * f(-n)s
 
+### Credits
+
+Thanks and Kudos to Sunny (@sunny-mittal) He has found a great naming convention for the method (nth) which is more expresive and to-the-point than mine (at_position).
