@@ -25,4 +25,15 @@ describe Fibonacci do
       end
     end
   end
+
+  # describe "Fibonacci Benchmark" do
+  #   # it 'work well for big numbers' do
+  #   if ENV["BENCH"] then
+  #     benchmark_performance_linear 'my algorithm', 0.9 do |n|
+  #       Fibonacci.nth(n)
+  #     end
+  #   end
+  # end
 end
+
+
