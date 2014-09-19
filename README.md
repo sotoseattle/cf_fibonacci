@@ -29,3 +29,9 @@ Very simple recursive method based on the two rules for Fibonacci numbers. It di
 ### Credits
 
 Thanks and Kudos to Sunny (@sunny-mittal) He has found a great naming convention for the method (nth) which is more expresive and to-the-point than mine (at_position).
+
+### Keys to consider:
+
+- The recursive approach is O(2^n) => very bad for performance purposes
+- Additionally the recursive way will run into stack depth problems
+- A simple approach of adding as you go is O(n) !!!! => smarter looking is not always better.

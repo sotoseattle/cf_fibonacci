@@ -5,6 +5,11 @@ include Fibonacci
 
 describe Fibonacci do
   describe 'I want the nth number in the fibonacci sequence' do
+    let(:solution) do
+      {0=>0, 1=>1, 2=>1, 3=>2, 4=>3, 5=>5, 6=>8, 7=>13, 8=>21, 9=>34, 10=>55,
+       -1=>1, -2=>-1, -3=>2, -4=>-3, -5=>5, -6=>-8, -7=>13, -8=>-21}
+    end
+
     it 'for position 0, returns 0' do
       Fibonacci.nth(0).must_equal solution[0]
     end
@@ -14,7 +19,7 @@ describe Fibonacci do
     end
 
     it 'for positive numbers adds the previous two' do
-      (0...21).each do |pos|
+      (0...10).each do |pos|
         Fibonacci.nth(pos).must_equal solution[pos]
       end
     end
@@ -25,15 +30,4 @@ describe Fibonacci do
       end
     end
   end
-
-  # describe "Fibonacci Benchmark" do
-  #   # it 'work well for big numbers' do
-  #   if ENV["BENCH"] then
-  #     benchmark_performance_linear 'my algorithm', 0.9 do |n|
-  #       Fibonacci.nth(n)
-  #     end
-  #   end
-  # end
 end
-
-
